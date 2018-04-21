@@ -3,6 +3,9 @@
     "loopback#favicon": {}
   },
   "initial": {
+    "morgan": {
+      "params": ["dev", { "buffer": true } ]
+    },
     "compression": {},
     "cors": {
       "params": {
@@ -13,7 +16,9 @@
     },
     "helmet#xssFilter": {},
     "helmet#frameguard": {
-      "params": { "action": "deny" }
+      "params": {
+        "action": "deny"
+      }
     },
     "helmet#hsts": {
       "params": {
@@ -38,7 +43,11 @@
       ]
     }
   },
-  "files": {},
+  "files": {
+    "loopback#static": {
+      "params": "$!../client"
+    }
+  },
   "final": {
     "loopback#urlNotFound": {}
   },
