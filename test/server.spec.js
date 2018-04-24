@@ -21,6 +21,7 @@ describe('loopback server', function() {
   });
 
   it('responds to /api/players', (done) => {
+    console.log('It rubs the lotion on its skin... ' + JSON.stringify(process.env));
     chai.request(server)
       .get('/api/players')
       .end((err, res) => {
