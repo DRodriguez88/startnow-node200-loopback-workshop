@@ -17,22 +17,22 @@
     "dataSource": "MongoDB"
   },
   "AccessToken": {
-    "dataSource": "MongoDB",
+    "dataSource": "db",
     "public": false
   },
   "ACL": {
-    "dataSource": "MongoDB",
+    "dataSource": "db",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "MongoDB",
+    "dataSource": "db",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "MongoDB",
+    "dataSource": "db",
     "public": false
   },
   "player": {
