@@ -2,7 +2,7 @@ deployment:
  staging:
    branch: master
    heroku:
-     appname: startnow-node200-loopback-workshop
+     appname: dr-loopback-workshop
  
 version: 2
 jobs:
