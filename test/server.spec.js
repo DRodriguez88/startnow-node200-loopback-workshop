@@ -15,7 +15,7 @@ describe('loopback server', function() {
     chai.request(server)
       .get('/')
       .end((err, res) => {
-        expect(err).not.exist;
+        expect(!err);
         expect(res).to.have.status(200);
         done();
       });
@@ -25,7 +25,7 @@ describe('loopback server', function() {
     chai.request(server)
       .get('/api/players')
       .end((err, res) => {
-        expect(err).not.exist;
+        expect(!err);
         expect(res).to.have.status(200);
         done();
       });
@@ -35,7 +35,7 @@ describe('loopback server', function() {
     chai.request(server)
       .get('/api/teams')
       .end((err, res) => {
-        expect(err).not.exist;
+        expect(!err);
         expect(res).to.have.status(200);
         done();
       });
